@@ -1,0 +1,57 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+// Include any default variable overrides here (though functions won't be available)
+
+
+// body bg color
+$body-bg: #ffffff;
+
+
+// Theme colors
+// https://getbootstrap.com/docs/5.3/customize/color/#theme-colors
+$primary: #7B8DD5;
+$secondary: #7d82b8;
+$success: #b7e3cc;
+$info: #c4ffb2;
+$warning: #d6f7a3;
+$danger: #dd7596;
+$light: #ffffff;
+$dark: #404e5c;
+
+
+// Changing navbar
+$navbar-light-color: #ffffff;
+$navbar-light-hover-color: #f2f2f2f2;
+$navbar-light-active-color: #ffffff;
+
+
+// Typography
+$font-family-sans-serif: "Inria Sans", sans-serif;
+$headings-font-family: "Inria Sans", sans-serif;
+
+
+$h1-font-size: 1rem * 8;
+$h2-font-size: 1rem * 2;
+$h3-font-size: 1rem * 1.75;
+
+
+$line-height-base: 1.6;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Then add additional custom code here
+
+// /* Change icon color globally */
+// .fa {
+//     color: #7B8DD5; /* Replace with your desired color */
+// }
+
+// /* Change color for specific icons */
+// .custom-icon {
+//     color: #3d3d3d; /* Specific color for this class */
+// }
+
+
