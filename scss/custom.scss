@@ -11,13 +11,13 @@ $body-bg: #ffffff;
 // Theme colors
 // https://getbootstrap.com/docs/5.3/customize/color/#theme-colors
 $primary: #7B8DD5;
-$secondary: #7d82b8;
-$success: #b7e3cc;
-$info: #c4ffb2;
-$warning: #d6f7a3;
-$danger: #dd7596;
+$secondary: #D79499;
+$success: #C9CFE4;
+// $info: #c4ffb2;
+// $warning: #d6f7a3;
+// $danger: #dd7596;
 $light: #ffffff;
-$dark: #404e5c;
+$dark: #3d3d3d;
 
 
 // Changing navbar
@@ -44,14 +44,46 @@ $line-height-base: 1.6;
 
 // Then add additional custom code here
 
-// /* Change icon color globally */
-// .fa {
-//     color: #7B8DD5; /* Replace with your desired color */
-// }
+// $btn-primary-color: #fff;
+// $btn-secondary-color: #fff;
 
-// /* Change color for specific icons */
-// .custom-icon {
-//     color: #3d3d3d; /* Specific color for this class */
-// }
+#hero {
+    position: relative;
+    background-image: url(../images/txt-banner-pre-order-landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #999;
+}
 
+#hero .d-flex {
+    height: 70vh;
+}
 
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px); 
+    z-index: 1;
+  }
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-item {
+    padding: 20px;
+  }
+  
+.card {
+    margin-bottom: 20px;
+}
+
+.icon-white {
+    filter: brightness(0) invert(1);
+}
