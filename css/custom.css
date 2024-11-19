@@ -11886,6 +11886,8 @@ textarea.form-control-lg {
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
 }
 
 .carousel-control-prev {
@@ -11914,6 +11916,22 @@ textarea.form-control-lg {
 
 .icon-white {
   filter: brightness(0) invert(1);
+}
+
+/* Adjust for mobile */
+@media (max-width: 982px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: auto; /* Reset vertical centering */
+    bottom: -0.1rem; /* Place below the product cards */
+    transform: none; /* No transform needed */
+  }
+  .carousel-control-prev {
+    left: 40%; /* Adjust left arrow spacing */
+  }
+  .carousel-control-next {
+    right: 40%; /* Adjust right arrow spacing */
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
