@@ -2,7 +2,7 @@
 // Option A: Include all of Bootstrap
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
 // Include any default variable overrides here (though functions won't be available)
-
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
 // body bg color
 $body-bg: #ffffff;
@@ -82,6 +82,35 @@ $line-height-base: 1.6;
   
 .card {
     margin-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev {
+    left: -0.25%;
+}
+
+.carousel-control-next {
+    right: -0.25%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Remove the default icon */
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '‹'; /* Use a black arrow character for previous */
+    color: black; /* Set color to black */
+    font-size: 3rem; /* Adjust the size */
+}
+
+.carousel-control-next-icon::after {
+    content: '›'; /* Use a black arrow character for next */
 }
 
 .icon-white {
