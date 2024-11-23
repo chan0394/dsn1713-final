@@ -2,7 +2,7 @@
 // Option A: Include all of Bootstrap
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
 // Include any default variable overrides here (though functions won't be available)
-// @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
 // body bg color
 $body-bg: #ffffff;
@@ -78,14 +78,14 @@ $line-height-base: 1.6;
 
 .carousel-item {
     padding: 20px;
-  }
+}
   
 .card {
     margin-bottom: 20px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+#productCarousel .carousel-control-prev,
+#productCarousel .carousel-control-next {
     width: 5%;
     top: 50%; /* Vertically center */
     transform: translateY(-50%);
@@ -119,20 +119,18 @@ $line-height-base: 1.6;
     filter: brightness(0) invert(1);
 }
 
-/* Adjust for mobile */
-@media (max-width: 982px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        top: auto; /* Reset vertical centering */
-        bottom: -0.1rem; /* Place below the product cards */
-        transform: none; /* No transform needed */
-    }
-
-    .carousel-control-prev {
-        left: 40%; /* Adjust left arrow spacing */
-    }
-
-    .carousel-control-next {
-        right: 40%; /* Adjust right arrow spacing */
-    }
+.flight-icon, 
+.checkmark-icon,
+.mail-icon {
+    color: #3d3d3d;
 }
+
+// .icon-sm { font-size: 18px; }
+// .icon-md { font-size: 24px; }
+// .icon-lg { font-size: 36px; }
+// .icon-xl { font-size: 48px; }
+
+#responsiveCarousel .carousel-indicators button {
+    width: 10px; /* Adjust the width for a smaller circle */
+    height: 10px; /* Make the height equal to width for a circle */
+    border-radius: 50%; /* Ensure the shap
