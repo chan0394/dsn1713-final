@@ -133,4 +133,29 @@ $line-height-base: 1.6;
 #responsiveCarousel .carousel-indicators button {
     width: 10px; /* Adjust the width for a smaller circle */
     height: 10px; /* Make the height equal to width for a circle */
-    border-radius: 50%; /* Ensure the shap
+    border-radius: 50%; /* Ensure the shape is circular */
+    background-color: #3d3d3d; /* Change color as needed */
+    border: none; /* Remove any border */
+}
+
+#responsiveCarousel .carousel-indicators .active {
+    background-color: #3d3d3d; /* Highlight the active indicator */
+}
+
+/* Adjust for mobile */
+@media (max-width: 982px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto; /* Reset vertical centering */
+        bottom: -0.1rem; /* Place below the product cards */
+        transform: none; /* No transform needed */
+    }
+
+    .carousel-control-prev {
+        left: 40%; /* Adjust left arrow spacing */
+    }
+
+    .carousel-control-next {
+        right: 40%; /* Adjust right arrow spacing */
+    }
+}
