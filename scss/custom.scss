@@ -84,8 +84,12 @@ $line-height-base: 1.6;
     margin-bottom: 20px;
 }
 
-#productCarousel .carousel-control-prev,
-#productCarousel .carousel-control-next {
+#productCarousel1 .carousel-control-prev,
+#productCarousel1 .carousel-control-next,
+#productCarousel2 .carousel-control-prev,
+#productCarousel2 .carousel-control-next,
+#productCarousel3 .carousel-control-prev,
+#productCarousel3 .carousel-control-next {
     width: 5%;
     top: 50%; /* Vertically center */
     transform: translateY(-50%);
@@ -107,7 +111,7 @@ $line-height-base: 1.6;
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
     content: '‹'; /* Use a black arrow character for previous */
-    color: black; /* Set color to black */
+    color: #3d3d3d; /* Set color to black */
     font-size: 3rem; /* Adjust the size */
 }
 
@@ -144,18 +148,26 @@ $line-height-base: 1.6;
 
 /* Adjust for mobile */
 @media (max-width: 982px) {
-    .carousel-control-prev,
-    .carousel-control-next {
+    #productCarousel1 .carousel-control-prev,
+    #productCarousel1 .carousel-control-next,
+    #productCarousel2 .carousel-control-prev,
+    #productCarousel2 .carousel-control-next,
+    #productCarousel3 .carousel-control-prev,
+    #productCarousel3 .carousel-control-next {
         top: auto; /* Reset vertical centering */
         bottom: -0.1rem; /* Place below the product cards */
         transform: none; /* No transform needed */
     }
 
-    .carousel-control-prev {
+    #productCarousel1 .carousel-control-prev,
+    #productCarousel2 .carousel-control-prev,
+    #productCarousel3 .carousel-control-prev {
         left: 40%; /* Adjust left arrow spacing */
     }
 
-    .carousel-control-next {
+    #productCarousel1 .carousel-control-next,
+    #productCarousel2 .carousel-control-next,
+    #productCarousel3 .carousel-control-next {
         right: 40%; /* Adjust right arrow spacing */
     }
 }
